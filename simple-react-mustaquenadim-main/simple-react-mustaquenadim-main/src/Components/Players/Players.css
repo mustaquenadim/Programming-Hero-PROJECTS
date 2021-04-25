@@ -1,0 +1,13 @@
+.img {
+    width: 100%;
+    height: 250px;
+}
+.custom-card {
+    width: 30%;
+    margin: 15px;
+    float: left;
+}
+.custom-text {
+    padding: 0;
+    margin: 0;
+}

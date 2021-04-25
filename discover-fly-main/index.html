@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header and menu section -->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end header and menu section -->
+
+    <!-- start booking section -->
+    <section id="booking-area" class="main-content container">
+        <div class="booking-form">
+            <p id="caution">Please take at least one sit!</p>
+            <h3>Booking Flights</h3>
+            <div class="input-group">
+                <label for="">Flying From</label>
+                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
+            </div>
+            <div class="input-group">
+                <label for="">Flying To</label>
+                <input class="inp-style" type="text" name="" placeholder="New York, United States">
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">Departure</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+                <div class="input-group">
+                    <label for="">Return</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+            </div>
+            <!-- handleSitChange js function -->
+            <div class="input-group f-class">
+                <div class="w-100">
+                    <label for="">First Class ($150)</label>
+                    <div class="f-class w-100">
+                        <button onclick="handleSitChange('first', false)" class="plus-minus-btn">-</button>
+                        <input id="first-count" class="inp-style inp-width" type="number" name="" value="0" min="0">
+                        <button onclick="handleSitChange('first', true)" class="plus-minus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <!-- handleSitChange js function -->
+            <div class="input-group f-class">
+                <div class="w-100">
+                    <label for="">Economy ($100)</label>
+                    <div class="f-class w-100">
+                        <button onclick="handleSitChange('economy', false)" class="plus-minus-btn">-</button>
+                        <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0" min="0">
+                        <button onclick="handleSitChange('economy', true)" class="plus-minus-btn">+</button>
+                    </div>
+                </div>
+            </div>
+            <!-- totalAmount js function -->
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p id="sub-total">$0</p>
+                    </div>
+                </div>
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p id="charge">$0</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p id="total">$0</p>
+                    </div>
+                </div>
+            </div>
+            <button onclick="bookNow()" class="btn-style">Book Now</button>
+        </div>
+
+        <div class="booking-content">
+            <h1>discover <br> around the world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise voluptatibus quam</p>
+        </div>
+    </section>
+    <!-- end booking section -->
+    
+    <!-- start confirmation section -->
+    <section id="confirmation">
+        <div class="message-box">
+            <h2>Purchase Confirm</h2>
+            <p>Booking Information</p>
+            <table>
+                <tr>
+                    <th>Sit Type</th>
+                    <th>Num. of Ticket</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>First Class</td>
+                    <td id="first-sit-booked">0</td>
+                    <td id="first-booked-amount">$0</td>
+                </tr>
+                <tr>
+                    <td>Economy</td>
+                    <td id="economy-sit-booked">0</td>
+                    <td id="economy-booked-amount">$0</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b>Grand Total</b> with VAT 10%</td>
+                    <td id="amount">$0</td>
+                </tr>
+            </table>
+            <button onClick="window.location.reload();" class="btn-style">Go to Home</button>
+        </div>
+    </section>
+    <!-- end confirmation section -->
+
+    <!-- start javascript -->
+    <script src="script.js"></script>
+    <!-- end javascript -->
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cooking Master</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- header -->
+        <header id="header">
+            <!-- navbar -->
+            <nav id="navbar">
+                <div class="brand">
+                    <a href="index.html">Cooking Master</a>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Recipes</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- end navbar -->
+        </header>
+        <!-- end header -->
+
+        <!-- main content -->
+        <main>
+            <!-- search section -->
+            <section id="search">
+                <div class="search-box">
+                    <form>
+                        <input
+                            id="meal-name"
+                            type="text"
+                            placeholder="Search food recipe..."
+                            name="search"
+                        />
+                        <button
+                            id="search-btn"
+                            onclick="searchFoodRecipe()"
+                            type="button"
+                        >
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <!-- end search section -->
+
+            <!-- food-items section -->
+            <section id="food-items">
+
+            </section>
+            <!-- end food-items section -->
+
+            <!-- recipe section -->
+            <section id="recipe">
+
+            </section>
+            <!-- end recipe section -->
+
+            <!-- alert -->
+            <section id="alert">
+                <p>Please enter valid food!</p>
+            </section>
+            <!-- end alert -->
+        </main>
+        <!-- end main content -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p>Copyright &copy; 2021 All rights reserved | Cooking Master</p>
+        </footer>
+        <!-- Footer -->
+
+        <!-- javascript -->
+        <script src="app.js"></script>
+        <!-- end javascript -->
+    </body>
+</html>
