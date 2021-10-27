@@ -1,6 +1,6 @@
 # [Programming Hero](https://web.programming-hero.com/) - Complete Web Development with Jhankar Mahbub `Batch 3`
 
-In this repository, you'll get all assignment's solution of Programming Hero Complete Web Developent `Batch 3` Course.
+In this repository, you'll get all assignment's solution of Programming Hero Complete Web Development `Batch 3` Course.
 
 Assignment No. | Name | Visit Website | Github | Technology
 -------------- | ---- | ------------- | ------ | ----------
